@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/css/(.*)",
+      "dest": "/css/$1",
+      "headers": { "Content-Type": "text/css; charset=utf-8" }
+    },
+    {
+      "src": "/js/(.*)",
+      "dest": "/js/$1",
+      "headers": { "Content-Type": "application/javascript; charset=utf-8" }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
